@@ -1,0 +1,27 @@
+Dashboard
+Home
+Profile
+Messages
+History
+Tasks
+Communities
+
+Settings
+Support
+Privacy
+
+<search icon> <search bar> <notification icon> <avatar> name
+
+<Avatar larger>
+Hi there,
+Mollock Horridus (@mollock) New Upload Share
+
+Your Projects				
+6 cards
+
+
+Announcement
+Card
+
+Trending
+Card

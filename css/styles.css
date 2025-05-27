@@ -1,1 +1,33 @@
-/* CSS Styling for Admin Dashboard for The Odin Project */
+/* CSS Styling for Admin Dashboard for The Odin Project 
+
+Buttons (Light blue): hsl(201, 79%, 46%)
+yellow: hsl(42, 87%, 55%)
+gray: hsl(214, 32%, 91%)
+
+
+*/
+
+*, *::before *::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --highlight-background-color: hsl(201, 79%, 46%);
+    --highlight-foreground-color: hsl(0, 0%, 100%);
+    --card-border-color: hsl(42, 87%, 55%);
+    --neutral-background-color: hsl(214, 32%, 91%);
+    --neutral-foreground-color:  hsl(0, 0%, 0%);
+    --card-background-color:  hsl(0, 0%, 100%);
+    --card-foreground-color: hsl(0, 0%, 0%);
+    --font-family: "Roboto", sans-serif;
+}
+
+html{
+    font-family: var(--font-family);
+    background-color: var(--neutral-background-color);
+    color: var(--neutral-foreground-color);
+    font-size: 1.3125rem;
+
+}
