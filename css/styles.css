@@ -13,6 +13,10 @@ gray: hsl(214, 32%, 91%)
     box-sizing: border-box;
 }
 
+.img{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
     --highlight-background-color: hsl(201, 79%, 46%);
     --highlight-foreground-color: hsl(0, 0%, 100%);
@@ -33,7 +37,7 @@ html{
 }
 
 .wrapper{
-    width: clamp(600px,90%,1200px);
+    width: clamp(600px,90%,1800px);
     margin-inline: auto;
     margin-block-start: 5vh;
 }
@@ -59,7 +63,10 @@ html{
 .top-bar{
     grid-column: 2/span 4;
     grid-row: 1;
-    background-color: red;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
 }
 
 .search{
@@ -70,12 +77,67 @@ html{
     margin-block-start: 0.5em;
     margin-inline-start: 2em;
     align-items: center;
+    padding-block-start: 1em;
 }
 
 #search{
-    background-color: var(--neutral-background-color);
+    background-color: gray;
     border-radius: 10px;
-    width: 40%;
+    width: 90%;
+    height: 1.5em;
+}
+
+.info{
+    font-size: 1.2rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.user{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+    justify-self: end;
+}
+.avatar{
+    height: 3rem;
+    
+}
+
+.user-big{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.avatar-big{
+    height: 4rem;
+}
+
+.user-name-big{
+    font-size: 4rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 0.25em;
+    border: 1px black solid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button{
+    padding: 0.5em 0.5em;
+    width: 8em;
+    background-color: var(--highlight-background-color);
+    color: var(--highlight-foreground-color);
+    font-size: 1rem;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-card{
