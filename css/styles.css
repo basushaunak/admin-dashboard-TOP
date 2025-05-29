@@ -69,6 +69,7 @@ html{
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: start;
+    background-color: white;
 }
 
 .search{
@@ -83,7 +84,8 @@ html{
 }
 
 #search{
-    background-color: gray;
+    background-color: var(--neutral-background-color);
+    color:var(--neutral-foreground-color)
     border-radius: 10px;
     width: 90%;
     height: 1.5em;
@@ -158,19 +160,15 @@ html{
     color: red;
 }
 .nav-card{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* justify-content: center; */
     display: flex;
     align-items: center;
     justify-items: center ;
     gap: 0.5em;
-    /* border: 1px red solid; */
-    /* padding-inline-start: 4em; */
 }
 
 .nav-card:hover{
     color: hsl(0, 100%, 50%);
+    cursor: pointer;
 }
 
 .nav-card > p {
@@ -197,25 +195,62 @@ html{
     grid-template-columns: 2fr 1fr;
     gap: 1em;
     border: 1px black solid;
+    padding-block-end: 2em;
 }
 .main-content-grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1em;
-    background-color: bisque;
-    /* border: 2px black solid; */
+    /* background-color: bisque; */
 }
 
 .content-card-holder{
     display: grid;
     grid-column: span 2;
     grid-template-columns: 1fr 1fr;
-    /* justify-content: space-between; */
-    /* align-items: start; */
     gap: 1em;
-    background-color: aqua;
+    align-items:center;
+    justify-content: center;
 }
 
-.content-card-holder >*{
-    border: 1px red solid;
+.content-card{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border-left: 4px var(--card-border-color) solid;
+    margin-inline-start: 1em;
+    background-color: #ffffff;
+    /* display:flex;
+    flex-direction: column; */
+}
+
+.content-heading, .content-text{
+    padding-inline: 1rem;
+}
+
+.content-heading{
+    line-height: 1.1em;
+    /* margin-block-start: 2em; */
+    /* padding-block-start: 0.5em;
+    padding-block-end: 0px; */
+    /* margin: 1rem 0 0 0; */
+}
+
+.content-text{
+    line-height: 1.1em;
+    padding-block-start: 0.25rem;
+    padding-block-end: 1rem;
+}
+
+
+.announcement-card{
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-inline-start: 1em;
+}
+
+.announcement-card > h2{
+    padding-block-start: 1rem;
 }
