@@ -1,10 +1,4 @@
 /* CSS Styling for Admin Dashboard for The Odin Project 
-
-Buttons (Light blue): hsl(201, 79%, 46%)
-yellow: hsl(42, 87%, 55%)
-gray: hsl(214, 32%, 91%)
-
-
 */
 
 *, *::before *::after{
@@ -32,8 +26,6 @@ html{
     font-family: var(--font-family);
     background-color: var(--neutral-background-color);
     color: var(--neutral-foreground-color);
-    /* font-size: 1.3125rem; */
-
 }
 
 .wrapper{
@@ -194,14 +186,12 @@ html{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1em;
-    border: 1px black solid;
     padding-block-end: 2em;
 }
 .main-content-grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1em;
-    /* background-color: bisque; */
 }
 
 .content-card-holder{
@@ -220,8 +210,6 @@ html{
     border-left: 4px var(--card-border-color) solid;
     margin-inline-start: 1em;
     background-color: #ffffff;
-    /* display:flex;
-    flex-direction: column; */
 }
 
 .content-heading, .content-text{
@@ -230,10 +218,6 @@ html{
 
 .content-heading{
     line-height: 1.1em;
-    /* margin-block-start: 2em; */
-    /* padding-block-start: 0.5em;
-    padding-block-end: 0px; */
-    /* margin: 1rem 0 0 0; */
 }
 
 .content-text{
